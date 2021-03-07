@@ -74,6 +74,7 @@ header > .size {
     border: 1px solid #947368;
     border-radius: 15px;
     padding: 2px 12px;
+    width: 220px;
 }
 .search-box > input {
     outline: none;
