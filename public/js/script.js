@@ -1,8 +1,9 @@
 window.onload = function() {
-    openMenu = new openMenu();
+    App = new App();
+    
 };
 
-class openMenu {
+class App {
     constructor() {
         this.isOpen = false;
         $("#header-menu-btn").on("click", (e) => {

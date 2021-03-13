@@ -19,165 +19,37 @@
         <a href="/">+more</a>
         <div class="ranking-video-box">
             <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
+                <div class="ranking-video-img"> 
+                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                </div>   
                 <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>usernameusernameusernameusernameusernameusernameusernameusernameusernameusernameusernameusernameusername</span></p>
+                <p><i class="fas fa-user-circle"></i> <span>user-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-nameuser-name</span></p>
                 <a href="/"></a>
             </div>
             <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
+                <div class="ranking-video-img"> 
+                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                </div>   
                 <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
+                <p><i class="fas fa-user-circle"></i> <span>user-name</span></p>
                 <a href="/"></a>
             </div>
             <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
+                <div class="ranking-video-img"> 
+                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                </div>   
                 <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
+                <p><i class="fas fa-user-circle"></i> <span>user-name</span></p>
                 <a href="/"></a>
             </div>
             <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
+                <div class="ranking-video-img"> 
+                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                </div>   
                 <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
+                <p><i class="fas fa-user-circle"></i> <span>user-name</span></p>
                 <a href="/"></a>
             </div>
         </div>
     </div>
-
-    <div class="ranking-happy">
-    <h2>HAPPY</h2>
-        <a href="/">+more</a>
-        <div class="ranking-video-box">
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ranking-sad">
-        <h2>SAD</h2>
-        <a href="/">+more</a>
-        <div class="ranking-video-box">
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ranking-stressed">
-        <h2>STRESSED</h2>
-        <a href="/">+more</a>
-        <div class="ranking-video-box">
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ranking-relaxed">
-        <h2>RELAXED</h2>
-        <a href="/">+more</a>
-        <div class="ranking-video-box">
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ranking-mango">
-        <h2>FEELING MANGO?</h2>
-        <a href="/">+more</a>
-        <div class="ranking-video-box">
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-            <div class="ranking-video">
-                <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">    
-                <h2>video title</h2>
-                <p><i class="fas fa-user-circle"></i> <span>username</span></p>
-            </div>
-        </div>
-    </div>
-
 </section>
