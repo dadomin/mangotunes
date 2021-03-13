@@ -18,6 +18,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://use.typekit.net/llx3jxg.css">
 	<link rel="stylesheet" href="/fontawesome/css/all.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="/js/jquery-3.3.1.js"></script>
