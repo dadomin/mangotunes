@@ -14,15 +14,15 @@ $result = $matches[7]; -->
 
 <section id="post">
     <div class="post-title">
-        <h2><?= $result ?></h2>
-        <p><span>날짜 시간</span> <span>조회수 0</span> <span>좋아요 0</span></p>
-        <h3><i class="fas fa-user-circle"></i> <a href="/">user-name</a></h3>
+        <h2>제목이 여기에 나옵니다</h2>
+        <p><span>2021-03-14 13:46:08</span><span class="line"></span><span>조회수&nbsp;&nbsp;0</span><span class="line"></span><span>좋아요&nbsp;&nbsp;0</span></p>
+        <div class="post-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div> 
     </div>
     <div class="post-video">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/zkEnqWFihJE" frameborder="0" allowfullscreen></iframe>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/zkEnqWFihJE" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="post-contents">
-        <p>내용을 씁니다.</p>
+        <p>내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.내용을 씁니다.</p>
     </div>
     <div class="post-btns">
         <button><i class="far fa-heart"></i><p>112</p></button>
@@ -33,39 +33,33 @@ $result = $matches[7]; -->
     </div>
     <div class="post-comments">
         <div class="post-comment-input">
-            <textarea name="" id="" cols="100" rows="3"></textarea>
-            <button>Post</button>
+            <textarea name="" id=""></textarea>
+            <button class="brown-btn-rev"><a href="/">POST</a></button>
         </div>
         <div class="timeline">
-            <div class="commet">
-                <div class="comment-user-img">
-                    <img src="/img/user.png" alt="user">
+            <div class="comment">
+                <div class="comment-user-name">
+                    <div class="user-img"><img src="/img/user.png" alt=""></div>
+                    <a href="/">username</a>
                 </div>
-                <div class="comment-sub">
-                    <h2>username</h2>
-                    <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-                    <span>2021-03-14</span>
-                </div>
+                <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+                <span>2021-03-14</span>
             </div>
-            <div class="commet">
-                <div class="comment-user-img">
-                    <img src="/img/user.png" alt="user">
+            <div class="comment">
+                <div class="comment-user-name">
+                    <div class="user-img"><img src="/img/user.png" alt=""></div>
+                    <a href="/">username</a>
                 </div>
-                <div class="comment-sub">
-                    <h2>username</h2>
-                    <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-                    <span>2021-03-14</span>
-                </div>
+                <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+                <span>2021-03-14</span>
             </div>
-            <div class="commet">
-                <div class="comment-user-img">
-                    <img src="/img/user.png" alt="user">
+            <div class="comment">
+                <div class="comment-user-name">
+                    <div class="user-img"><img src="/img/user.png" alt=""></div>
+                    <a href="/">username</a>
                 </div>
-                <div class="comment-sub">
-                    <h2>username</h2>
-                    <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-                    <span>2021-03-14</span>
-                </div>
+                <p>댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+                <span>2021-03-14</span>
             </div>
         </div>
     </div>

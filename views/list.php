@@ -31,10 +31,202 @@
         <div class="list-table">
             <table id="list-tbl">
                 <tr>
-                    <th>NO</th>
-                    <th>TITLE</th>
-                    <th>DATE</th>
-                    <th>WRITER</th>
+                    <th width="5%">NO</th>
+                    <th width="70%">TITLE</th>
+                    <th width="10%">DATE</th>
+                    <th widht="20%">WRITER</th>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">15</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">14</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">13</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">12</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">11</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">10</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">9</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">8</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">7</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">6</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">5</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p class="list-video-no">4</p></td>
+                    <td class="list-video-title">
+                        <div class="list-video-img">
+                            <img src="/img/music_note.png" alt="AS">
+                        </div>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
+                    </td>
+                    <td>
+                        <p>2021-03-14</p>
+                    </td>
+                    <td>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    </td>
                 </tr>
                 <tr>
                     <td><p class="list-video-no">3</p></td>
@@ -42,7 +234,7 @@
                         <div class="list-video-img">
                             <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">
                         </div>
-                        <a href="/post">제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다<span class="list-video-comments">[15]</span><br>
+                        <a href="/post">제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다제목이 나타납니다<span class="list-comment">[15]</span><br>
                             <span class="list-video-vl">조회수 0 | 좋아요 0</span>    
                         </a>
                     </td>
@@ -50,7 +242,7 @@
                         <p>2021-03-14</p>
                     </td>
                     <td>
-                    <div class="list-video-user"><div><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -59,13 +251,14 @@
                         <div class="list-video-img">
                             <img src="/img/music_note.png" alt="AS">
                         </div>
-                        <a href="/">제목이 나타납니다<span>[15]</span></a>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
+                        
                     </td>
                     <td>
                         <p>2021-03-14</p>
                     </td>
                     <td>
-                    <div class="list-video-user"><div><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                    <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
                     </td>
                 </tr>
                 <tr>
@@ -74,16 +267,21 @@
                         <div class="list-video-img">
                             <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">
                         </div>
-                        <a href="/">제목이 나타납니다<span>[15]</span></a>
+                        <a href="/">제목이 나타납니다<span class="list-comment">[15]</span><br><span class="list-video-vl">조회수 0 | 좋아요 0</span> </a>
                     </td>
                     <td>
                         <p>2021-03-14</p>
                     </td>
                     <td>
-                        <div class="list-video-user"><div><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
+                        <div class="list-video-user"><div class="user-img"><img src="/img/user.png" alt=""></div> <a href="/">user-name</a></div>
                     </td>
                 </tr>
             </table>
+        </div>
+
+        <div class="list-page-btns">
+            <button class="brown-btn-rev"><a href="/">Prev</a></button>
+            <button class="brown-btn-rev"><a href="/">Next</a></button>
         </div>
     </div>
 </section>

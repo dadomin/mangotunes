@@ -41,7 +41,7 @@
 					<a href="/"><i class="fas fa-search"></i></a>
 				</div>
 				<a href="/"><i class="fas fa-plus-circle"></i></a>
-				<button id="login-btn"><a href="/login">Log In</a></button>
+				<button id="login-btn" class="brown-btn"><a href="/login">Log In</a></button>
 				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
 				</button>
 				<ul id="header-menu">
