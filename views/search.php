@@ -2,11 +2,11 @@
 <div class="size">
     <section id="search">
         
-    <h2>'<span><?= $word?></span>' 에 대한 검색결과</h2>
+    <h2>SEARCH RESULTS FOR '<span><?= $word?></span>'</h2>
 
 
 <?php if($list == null) :?>
-    <h3>해당 검색결과가 존재하지 않습니다.</h3>
+    <h3>The search result does not exist..</h3>
 <?php else : ?>
     <div class="list-table">
         <table class="list-tbl">

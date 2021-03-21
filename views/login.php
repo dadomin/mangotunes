@@ -4,11 +4,11 @@
             <h1>Sign In</h1>
             <p>and let's play your music!</p>
             <div class="login-input">
-                <p>아이디</p>
-                <input type="text" placeholder="Your ID" name="id">
+                <p>E-MAIL</p>
+                <input type="text" placeholder="Your E-MAIL" name="email">
             </div>
             <div class="login-input">
-                <p>비밀번호</p>
+                <p>PASSWORD</p>
                 <input type="password" placeholder="PASSWROD" name = "pass">
             </div>
             <button>LOG IN</button>

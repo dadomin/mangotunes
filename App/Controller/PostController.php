@@ -74,7 +74,7 @@ class PostController extends MasterController {
         $category = $_POST['category'];
         $link = trim($_POST['link']);
         $contents = trim($_POST['contents']);
-        $day = new \DateTime('now', new \DateTimeZone('Asia/Seoul'));
+        $day = new \DateTime('now', new \DateTimeZone('America/New_York'));
         $date = $day->format('Y-m-d H:i:s');
         $writer = $user->id;
 
@@ -195,7 +195,7 @@ class PostController extends MasterController {
         
         $idx = $_POST['idx'];
         $contents = trim($_POST['contents']);
-        $day = new \DateTime('now', new \DateTimeZone('Asia/Seoul'));
+        $day = new \DateTime('now', new \DateTimeZone('America/New_York'));
         $date = $day->format('Y-m-d H:i:s');
 
         // 공백 체크

@@ -48,7 +48,7 @@
                         <div class="list-video-img">
                             <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" onerror="this.src='/img/music_note.png'">
                         </div>
-                        <a href="/view&idx=<?=$item->idx?>"><?=$item->title?><span class="list-comment">[<?= $item->comments?>]</span><br><span class="list-video-vl">조회수 <?= $item->views ?> | 좋아요 <?= $item->is_like ?></span> </a>
+                        <a href="/view&idx=<?=$item->idx?>"><?=$item->title?><span class="list-comment">[<?= $item->comments?>]</span><br><span class="list-video-vl">Views <?= $item->views ?> | Likes <?= $item->is_like ?></span> </a>
                         
                     </td>
                     <td>

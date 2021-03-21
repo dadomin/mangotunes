@@ -85,9 +85,9 @@
         let temp = `
             <div class="alert-box">
                 <span class="alert-close">&#10005;</span>
-                <h2>안내</h2>
+                <h2>Notice</h2>
                 <h4>${location.href}</h4>
-                <p>위 링크를 복사하여 공유해보세요!</p>
+                <p>Copy the link above to share!</p>
             </div>
             <div class="alert-back">
             </div>

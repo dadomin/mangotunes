@@ -101,17 +101,17 @@ class LoginController extends MasterController {
             exit;
         }
 
-        $id = $_POST['id'];
+        $email = $_POST['email'];
         $pass = $_POST['pass'];
 
         // 해당란이 비워져있는지 체크
-        if($id == "" || $pass == "") {
+        if($email == "" || $pass == "") {
             DB::msgAndBack("필수입력란이 비워져 있습니다.");
             exit;
         }
 
-        $sql = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
-        $user = DB::fetch($sql, [$id, $pass]);
+        $sql = "SELECT * FROM `users` WHERE `email` = ? AND `pw` = ?";
+        $user = DB::fetch($sql, [$email, $pass]);
 
         if(!$user) {
             DB::msgAndBack("로그인 실패");
