@@ -58,7 +58,7 @@ class LoginController extends MasterController {
                     exit;
                 }
 
-                if($i->email == $name) {
+                if($i->email == $email) {
                     DB::msgAndBack("해당 이름이 이미 등록되어있습니다.");
                     exit;
                 }
@@ -129,6 +129,12 @@ class LoginController extends MasterController {
 
     public function logout() 
     {
+        
+        if(!isset($_SESSION['user'])){
+            DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
+            exit;
+        }
+
         unset($_SESSION['user']);
         DB::msgAndGo("로그아웃 되었습니다.", "/");
     }
