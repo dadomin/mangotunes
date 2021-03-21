@@ -9,12 +9,11 @@ class ProfileController extends MasterController {
     {
         $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 
+        $other = $user;
         if(!isset($_GET['id'])){
             if($user == null){
                 DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
                 exit;
-            }else {
-                $other = $user;
             }
         }else {
             $other = $_GET['id'];
