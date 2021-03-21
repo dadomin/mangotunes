@@ -55,7 +55,7 @@
                         <p><?= $item->day ?></p>
                     </td>
                     <td>
-                    <div class="list-video-user"><div class="user-img"><img src="<?= $item->img ?>" alt=""></div> <a href="/user"><?= $item->writer ?></a></div>
+                    <div class="list-video-user"><div class="user-img"><img src="<?= $item->img ?>" alt=""></div> <span><?= $item->writer ?></span></div>
                     </td>
                 </tr>
                 <?php 

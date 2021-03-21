@@ -570,6 +570,9 @@ header > .size {
     flex-direction: row;
     word-break: break-all;
 }
+.list-video-user > span {
+    max-width: 120px;
+}
 .list-page-btns {
     width: 100%;
     height: auto;

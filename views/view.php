@@ -13,7 +13,7 @@
     <div class="post-title">
         <h2><?= $result->title ?></h2>
         <p><span><?= $result->day ?></span><span class="line"></span><span>조회수&nbsp;&nbsp;<?= $result->views ?></span><span class="line"></span><span>좋아요&nbsp;&nbsp;<?= $result->is_like ?></span></p>
-        <div class="post-user"><div class="user-img"><img src="<?= $result->img ?>" alt=""></div><a href="/user"><?= $result->writer ?></a></div> 
+        <div class="post-user"><div class="user-img"><img src="<?= $result->img ?>" alt=""></div><?= $result->writer ?></div> 
     </div>
     <div class="post-video">
         <iframe width="854" height="480" src="https://www.youtube.com/embed/<?= $result->link_id ?>" frameborder="0" allowfullscreen></iframe>
