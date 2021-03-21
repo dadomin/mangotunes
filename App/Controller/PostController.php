@@ -96,16 +96,18 @@ class PostController extends MasterController {
         // db에 넣기
         $ussql = "UPDATE users SET posts = posts+1 WHERE id = ?";
         $usok = DB::query($ussql, [$user->id]);
-        $_SESSION['user']->posts = $_SESSION['user']->posts +1;
-        
+
         $sql = "INSERT INTO music_posting(`title`, `category`, `link_id`, `contents`, `day`, `writer`) VALUES(?,?,?,?,?,?)";
         $cnt = DB::query($sql, [$title, $category, $link_id, $contents, $date, $writer]);
-
         
         if(!$cnt || !$usok) {
             DB::msgAndBack("글 추가하기 실패");
             exit;
         }
+
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
         
         DB::msgAndGo("글 추가 성공","/list&feeling={$category}");
     }
