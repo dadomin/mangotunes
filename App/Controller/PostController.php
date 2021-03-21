@@ -323,6 +323,20 @@ class PostController extends MasterController {
         $postok = DB::query($postsql, [$idx]);
         $comok = DB::query($comsql, [$idx]);
 
+        $sql = "SELECT liked, id FROM users";
+        $first = DB::fetchAll($sql, []);
+        for($first as $item){
+            if($item->liked != null){
+                $replace = str_replace($idx, "", $item);
+                $result = explode("/",$replace);
+                $result = array_diff($result, array(''));
+                $str = implode("/", $result);
+                
+                $query = "UPDATE users SET liked = ? WHERE id = ?";
+                $done = DB::query($a,[$str, $item->id]);
+            }
+        }
+
         if(!$userok || !$postok) {
             DB::msgAndBack("오류 발생");
             exit;
