@@ -9,27 +9,15 @@ class ProfileController extends MasterController {
     {
         $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 
-        $other = $user;
-        if(!isset($_GET['id'])){
             if($user == null){
                 DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
                 exit;
             }
-        }else {
-            $other = $_GET['id'];
-            $chsql = "SELECT * FROM users WHERE id = ?";
-            $check = DB::fetch($chsql, [$other]);
-            if(!$check){
-                DB::msgAndBack("해당 아이디가 존재하지 않습니다.");
-                exit;
-            }
-            $other = $check;
-        }
         
         $likeResult = null;     
 
-        if($other->liked != null){
-            $like = explode("/",$other->liked);
+        if($user->liked != null){
+            $like = explode("/",$user->liked);
             $like = array_diff($like, array(''));
             $cnt1 = 0;
             foreach($like as $i) {
@@ -46,8 +34,8 @@ class ProfileController extends MasterController {
 
         
         $saveResult = null;   
-        if($other->saved != null){
-            $save = explode("/",$other->saved);
+        if($user->saved != null){
+            $save = explode("/",$user->saved);
             $save = array_diff($save, array(''));
          
             $cnt2 = 0;
@@ -63,11 +51,11 @@ class ProfileController extends MasterController {
             $save = 0;
         }
         $posql = "SELECT m.*, u.img FROM music_posting m JOIN users u ON m.writer = u.id WHERE m.writer = ?";
-        $posts = DB::fetchAll($posql, [$other->id]);
+        $posts = DB::fetchAll($posql, [$user->id]);
    
         
 
 
-        $this->render("profile", ["user" => $user,"oter"=>$other, "like" => $like, "save" => $save, "posts"=>$posts,"likes"=>$likeResult,"saves"=>$saveResult]);
+        $this->render("profile", ["user" => $user,"oter"=>$user, "like" => $like, "save" => $save, "posts"=>$posts,"likes"=>$likeResult,"saves"=>$saveResult]);
     }
 }
