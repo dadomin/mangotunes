@@ -311,7 +311,7 @@ class PostController extends MasterController {
         $idx = $_GET['idx'];
         $id = $_GET['id'];
 
-        if($user != $id) {
+        if($user->id != $id) {
             DB::msgAndBack("본인이 쓴 글만 삭제할 수 있습니다.");
             exit;
         }
