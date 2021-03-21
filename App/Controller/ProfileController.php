@@ -9,10 +9,10 @@ class ProfileController extends MasterController {
     {
         $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 
-            if($user == null){
-                DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
-                exit;
-            }
+        if($user == null){
+            DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
+            exit;
+        }
         
         $likeResult = null;     
 
@@ -56,6 +56,6 @@ class ProfileController extends MasterController {
         
 
 
-        $this->render("profile", ["user" => $user,"oter"=>$user, "like" => $like, "save" => $save, "posts"=>$posts,"likes"=>$likeResult,"saves"=>$saveResult]);
+        $this->render("profile", ["user" => $user, "like" => $like, "save" => $save, "posts"=>$posts,"likes"=>$likeResult,"saves"=>$saveResult]);
     }
 }

@@ -40,7 +40,7 @@
 					<button type="submit"><i class="fas fa-search"></i></button>
 				</form>
 				<a href="/write"><i class="fas fa-plus-circle"></i></a>
-				<div class="user-img" onclick="location.href='/user&id=<?=$user->id?>'">
+				<div class="user-img" onclick="location.href='/user'">
 					<img src="<?= $user->img ?>" alt="">
 				</div>
 				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
