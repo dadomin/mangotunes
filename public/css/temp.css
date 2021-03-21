@@ -280,11 +280,12 @@ header > .size {
     padding: 0 12px;
 }
 .ranking-video-user > div {
+    flex: 1;
     width: 21px;
     height: 21px;
 }
 .ranking-video > div > span {
-    width: 80%;
+    flex: 9;
     word-break: break-all;
 }
 .ranking-video > a {
@@ -519,9 +520,6 @@ header > .size {
 }
 .list-tbl tr td {
     padding: 21px 12px;
-}
-.list-tbl tr td > p {
-    font-size: 12px;
 }
 .list-tbl tr:hover {
     background-color: #f7f8f9;
@@ -876,16 +874,16 @@ footer {
 .profile-box {
     width: 50%;
     display: flex;
+    justify-content: space-between;
 }
 .profile-box >.user-img {
     width: 70px;
     height: 70px;
     float: left;
     display: flex;
-    margin-right: 12px;
 }
 .profile-box > h2 {
-    max-width: 470px;
+    width: 470px;
     word-break: break-all;
     padding-top: 16px;
     font-weight: 600;
@@ -935,399 +933,401 @@ footer {
     color: #777;
 }
 
-
-/* 반응형 */
-@media (max-width: 767px) {
-    .size {
+/* here!!!! */
+@media (max-width: 767px){
+    .in {
         width: 400px;
     }
-
     header {
-        height: 140px;
-    }
-    header > .size {
-        flex-direction: column;
-        justify-content: center;
-    }
-    #header-nav {
-        margin-top: 14px;
-    }
-
-    #main-nav > ul {
-        width: 400px;
-        justify-content: space-between;
-    }
-
-
-    #main-ranking > div {
-        width: 400px;
-    }
-
-    .ranking-video-box {
-        flex-wrap: wrap;
-    }
-    .ranking-video {
-        width: 170px;
-        margin-bottom: 21px;
-    }
-    .ranking-video > .ranking-video-img {
         height: 120px;
-    }
-    .ranking-video > h2 {
-        font-size: 18px;
-    }
-
-    #help {
-        flex-direction: column;
-    }
-    #help > a {
-        margin: 42px auto;
-    }
-    #login,
-    #register {
-        padding: 50px 0;
-    }
-    #login-form, #register-form {
-        width: 400px;
-    }
-    .filebox label {
-        padding: 8px 4px;
-        font-size: 14px;
+        position: relative;
     }
     
-    #list > .size {
-        width: 500px;
+    #header-menu-open {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
-    .list-tbl tr td {
-        padding: 7px;
-        font-size: 12px;
+    header > nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 180px;
+        background-color: #e2eefd;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
-    .list-video-title > a {
-        width: 80%;
-    }
-    .list-video-img{
-        width: 30px;
-        height: 30px;
-        border-radius: 7px;
-        margin-right: 7px;
-    }
-    .list-video-user > span {
-        max-width: 30px;
-    }
-
-    .post-title > p {
-        font-size: 12px;
-    }
-    .post-title > p > span {
-        margin-right: 10px;
-    }
-    .post-user {
-        font-size: 16px;
-    }
-    .post-user > div {
-        width: 24px;
-        height: 24px;
-    }
-
-    #write {
-        width: 400px;
-    }
-    #profile-main {
-        flex-direction: column;
-        padding: 12px;
-        align-items: center;
-        margin-bottom: 32px;
-    }
-    .profile-box {
-        justify-content: center;
-    }
-    .profile-menu {
+    #main-menu {
+        display: none;
         width: 100%;
-        justify-content: center;
+        height: auto;
+    }
+    #main-menu > li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+    #main-menu > li:nth-last-child(1){
+        padding: 0;
+    }
+    #header-menu-open:hover ~ nav > #main-menu,
+    #main-menu:hover {
+        display: block;
     }
 
-    #footer-nav {
-        height: 150px;
+    .main-title {
+        height: 200px;
+        padding-top: 25px;
     }
-    #footer-nav > ul {
+    .main-title > img {
+        width: 200px;
+    }
+    .main-title p {
+        font-size: 25px;
+    }
+    .main-title p >span {
+        font-size: 32px;
+    }
+
+    #main-list-title {
+        margin-top: 50px;
+    }
+    #main-list-title > img {
+        width: 150px;
+    }
+    #main-list-title > h2 {
+        font-size: 25px;
+    }
+    #main-list {
         width: 400px;
-        flex-wrap: wrap;
+        margin: 20px auto;
+        flex-direction: column;
     }
-    #footer-nav > ul > li {
-        width: 50%;
-        text-align: center;
+    #main-list > div {
+        margin: 0;
+        width: 100%;
+    }
+    .main-buttons {
+        width: 400px; 
+        height: auto;
+        flex-direction: column;
+    }
+    .main-buttons > button {
+        margin-bottom: 12px;
+    }
+
+    footer {
+        height: 140px;
+        flex-direction: column;
+    }
+
+    #api {
+        width: 400px;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+    .api-nav {
+        flex: none;
+    }
+    #api-menu> li {
+        font-size: 13px;
+        height: 30px;
+        margin-bottom: 7px;;
+    }
+    #api-menu > li.active {
+        margin: 12px auto;
+    }
+    .api-sub {
+        flex: none;
+    }
+    .contents {
+        padding: 30px 0;
+    }
+    .contents > h1 {
+        font-size: 35px;
+        padding-bottom: 7px;
+        margin-bottom: 30px;
+    }
+    .contents > p {
+        margin: 10px 0;
+        line-height: 1.4;
+        font-size: 15px;
+    }
+    .contents > h2 {
+        font-size: 25px;
+        margin: 30px 0;
+    }
+    .contents > h3 {
+        margin: 30px auto;
+    }
+    .download-form {
+        width: 400px;
+        padding: 15px 30px;
+        margin: 30px auto;
+    }
+    .download-input-boxes > div{
+        width: 100%;
+    }
+    .subscribe-main > button {
+        width: 400px;
+    }
+    .subscribe-sub {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .subscribe-sub-box {
+        margin-bottom: 21px;
+    }
+    #support {
+        width: 400px;
+    }
+    #login {
+        padding: 50px 0;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .size {
+    .in {
         width: 600px;
     }
-
     header {
-        height: 160px;
-    }
-    header > .size {
-        flex-direction: column;
-        justify-content: center;
-    }
-    #header-nav {
-        margin-top: 14px;
-    }
-
-    #main-nav > ul {
-        width: 400px;
-        justify-content: space-between;
-    }
-
-    #main-ranking > div {
-        width: 600px;
-    }
-
-    .ranking-video-box {
-        flex-wrap: wrap;
-    }
-    .ranking-video {
-        width: 270px;
-        margin-bottom: 21px;
-    }
-    .ranking-video > .ranking-video-img {
-        height: 160px;
-    }
-    .ranking-video > h2 {
-        font-size: 21px;
-    }
-
-    #help {
-        flex-direction: row;
-    }
-    #help > a {
-        margin: 0 24px;
-    }
-    #login,
-    #register {
-        padding: 50px 0;
-    }
-    #login-form, #register-form {
-        width: 600px;
-    }
-    .filebox label {
-        padding: 8px 4px;
-        font-size: 14px;
+        height: 150px;
+        position: relative;
     }
     
-    #list > .size {
-        width: 700px;
+    #header-menu-open {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
-    .list-tbl tr td {
-        padding: 7px;
-        font-size: 14px;
+    header > nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 180px;
+        background-color: #e2eefd;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
     }
-    .list-video-title > a {
-        width: 80%;
-    }
-    .list-video-img{
-        width: 35px;
-        height: 35px;
-        border-radius: 7px;
-        margin-right: 7px;
-    }
-    .list-video-user > span {
-        max-width: 30px;
-    }
-
-    .post-title > p {
-        font-size: 12px;
-    }
-    .post-title > p > span {
-        margin-right: 10px;
-    }
-    .post-user {
-        font-size: 16px;
-    }
-    .post-user > div {
-        width: 24px;
-        height: 24px;
-    }
-
-    #write {
-        width: 600px;
-    }
-    #profile-main {
-        flex-direction: column;
-        padding: 12px;
-        align-items: center;
-        margin-bottom: 32px;
-    }
-    .profile-box {
-        justify-content: center;
-    }
-    .profile-menu {
+    #main-menu {
+        display: none;
         width: 100%;
-        justify-content: center;
+        height: auto;
+    }
+    #main-menu > li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+    #main-menu > li:nth-last-child(1){
+        padding: 0;
+    }
+    #header-menu-open:hover ~ nav > #main-menu,
+    #main-menu:hover {
+        display: block;
     }
 
-    #footer-nav {
-        height: 100px;
+    .main-title {
+        height: 250px;
+        padding-top: 25px;
     }
-    #footer-nav > ul {
+    .main-title > img {
+        width: 250px;
+    }
+    .main-title p {
+        font-size: 35px;
+    }
+    .main-title p >span {
+        font-size: 40px;
+    }
+    #main-list-title {
+        margin-top: 50px;
+    }
+    #main-list-title > img {
+        width: 170px;
+    }
+    #main-list-title > h2 {
+        font-size: 32px;
+    }
+    #main-list {
         width: 600px;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    #footer-nav > ul > li {
-        width: 30%;
-        text-align: center;
+    #main-list > div {
+        flex: none;
+        width: 250px;
+    }
+    .main-buttons {
+        width: 600px;
+    }
+
+    #api {
+        width: 600px;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+    .api-nav {
+        flex: none;
+    }
+    #api-menu> li {
+        font-size: 15px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+    #api-menu > li.active {
+        margin: 15px auto;
+    }
+    .api-sub {
+        flex: none;
+    }
+    .contents {
+        padding: 30px 0;
+    }
+    .contents > h1 {
+        font-size: 35px;
+        padding-bottom: 7px;
+        margin-bottom: 30px;
+    }
+    .contents > p {
+        margin: 10px 0;
+        line-height: 1.4;
+        font-size: 15px;
+    }
+    .contents > h2 {
+        font-size: 25px;
+        margin: 30px 0;
+    }
+    .contents > h3 {
+        margin: 30px auto;
+    }
+    .download-form {
+        width: 600px;
+        padding: 30px 45px;
+        margin: 50px auto;
+    }
+    .download-input-boxes > div{
+        width: 100%;
+    }
+    .subscribe-main > button {
+        width: 600px;
+    }
+    .subscribe-sub {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .subscribe-sub-box {
+        margin-bottom: 21px;
+    }
+    #support {
+        width: 400px;
+    }
+    #login {
+        padding: 80px 0;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-    .size {
-        width: 1000px;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .in {
+        width: 800px;
     }
-    #main-nav > ul {
-        width: 1000px;
+    header {
+        height: 80px;
     }
-
-    #main-ranking > div {
-        width: 1000px;
+    .main-title {
+        height: 300px;
+        padding-top: 28px;
     }
-
-    .ranking-video {
-        width: 220px;
-        margin-bottom: 21px;
+    .main-title > img {
+        width: 330px;
     }
-    .ranking-video > .ranking-video-img {
-        height: 150px;
+    .main-title p {
+        font-size: 40px;
     }
-    .ranking-video > h2 {
-        font-size: 18px;
+    .main-title p >span {
+        font-size: 45px;
     }
-
-    .filebox label {
-        padding: 8px 4px;
-        font-size: 14px;
+    #main-list {
+        width: 800px;
+        flex-wrap: wrap;
     }
-    
-    #list > .size {
-        width: 1000px;
-    }
-    .list-tbl tr td {
-        padding: 21px 12px;
+    #main-list > div {
+        flex: none;
+        width: 350px;
     }
     
-    .list-video-title > a {
-        width: 90%;
-        word-break: break-all;
+    #api {
+        width: 900px;
+        margin: 30px auto;
     }
-    .list-video-img {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        margin-right: 21px;
-        border-radius: 12px;
+    #api-menu> li {
+        font-size: 15px;
+        height: 40px;
+        margin-bottom: 15px;
     }
-    .list-video-user > span {
-        max-width: 100px;
+    .download-form {
+        width: 800px;
+        padding: 30px 45px;
+        margin: 50px auto;
     }
-
-    .post-title > p {
-        font-size: 12px;
+    .subscribe-main > button {
+        width: 800px;
     }
-    .post-title > p > span {
-        margin-right: 10px;
+    .subscribe-sub-box {
+        margin: 0 7px;
     }
-    .post-user {
-        font-size: 16px;
+    #support {
+        width: 900px;
     }
-    .post-user > div {
-        width: 27px;
-        height: 27px;
-    }
-
-    #write {
-        width: 600px;
-    }
-
-    #footer-nav > ul {
-        width: 1000px;
+    #login {
+        padding: 80px 0;
     }
 }
 
 @media (min-width: 1200px) {
-    .size {
-        width: 1200px;
+    .in {
+        width: 1000px;
     }
-
-    #main-nav > ul {
-        width: 1200px;
+    .main-title {
+        height: 350px;
+        padding-top: 40px;
     }
-
-    #main-ranking > div {
-        width: 1200px;
+    .main-title > img {
+        width: 350px;
     }
-
-    .ranking-video {
-        width: 270px;
-        margin: 0 12px;
+    #main-list {
+        width: 1000px;
     }
-    .ranking-video > .ranking-video-img {
-        height: 155px;
-    }
-    .ranking-video > h2 {
-        font-size: 21px;
-    }
-
-    .filebox label {
-        padding: 8px 4px;
-        font-size: 14px;
+    #main-list > div {
+        margin: 0;
     }
     
-    #list > .size {
-        width: 1200px;
+    #api {
+        width: 1000px;
+        margin: 30px auto;
     }
-    .list-tbl tr td {
-        padding: 21px 12px;
+    #api-menu> li {
+        font-size: 15px;
+        height: 40px;
+        margin-bottom: 12px;
     }
-    
-    .list-video-title > a {
-        width: 90%;
-        word-break: break-all;
+    .download-form {
+        width: 1000px;
+        padding: 30px 45px;
+        margin: 80px auto;
     }
-    .list-video-img {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        margin-right: 21px;
-        border-radius: 12px;
+    .subscribe-main > button {
+        width: 1000px;
     }
-    .list-video-user > span {
-        max-width: 120px;
+    .subscribe-sub-box {
+        margin: 0 14px;
     }
-
-    .post-title > p {
-        font-size: 12px;
+    #support {
+        width: 1000px;
     }
-    .post-title > p > span {
-        margin-right: 10px;
+    #login {
+        padding: 120px 0;
     }
-    .post-user {
-        font-size: 16px;
-    }
-    .post-user > div {
-        width: 27px;
-        height: 27px;
-    }
-
-    #write {
-        width: 800px;
-    }
-
-    #footer-nav > ul {
-        width: 1200px;
-    }
-
 }
