@@ -87,11 +87,11 @@
                         <div class="list-video-img">
                             <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" onerror="this.src='/img/music_note.png'">
                         </div>
-                        <a href="/view&idx=<?=$item->idx?>"><?=$item->title?><span class="list-comment">[<?= $item->comments?>]</span><br><span class="list-video-vl">조회수 <?= $item->views ?> | 좋아요 <?= $item->is_like ?></span> </a>
+                        <a class="like-a" href="/view&idx=<?=$item->idx?>" onerror="this.innerHTML='삭제된 게시글입니다.'"><?=$item->title?><span class="list-comment">[<?= $item->comments?>]</span><br><span class="list-video-vl">조회수 <?= $item->views ?> | 좋아요 <?= $item->is_like ?></span> </a>
                         
                     </td>
                     <td>
-                    <div class="list-video-user"><div class="user-img"><img src="<?= $item->img ?>" alt=""></div> <a href="/"><?= $item->writer ?></a></div>
+                    <div class="list-video-user"><div class="user-img"><img src="<?= $item->img ?>" alt="" onerror="this.src='/img/user.png'"></div> <a href="/" onerror="this.innerHTML='사용자를 찾을수 없음'"><?= $item->writer ?></a></div>
                     </td>
                 </tr>
                 <?php 
