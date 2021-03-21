@@ -325,7 +325,7 @@ class PostController extends MasterController {
 
         $sql = "SELECT * FROM users";
         $first = DB::fetchAll($sql, []);
-        for($first as $item){
+        for($first as $value => $item){
             if($item->liked != null){
                 $replace1 = str_replace($idx, "", $item->liked);
                 $result1 = explode("/",$replace1);
