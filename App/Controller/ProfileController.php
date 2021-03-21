@@ -14,6 +14,10 @@ class ProfileController extends MasterController {
             exit;
         }
         
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        
         $likeResult = null;     
 
         if($user->liked != null){

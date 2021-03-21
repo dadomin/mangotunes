@@ -137,7 +137,11 @@ class PostController extends MasterController {
             DB::msgAndBack("오류 발생");
             exit;
         }
-       $_SESSION['user']->liked = $liked;
+
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        
         DB::msgAndGo("좋아요를 누르셨습니다.", "/view&idx=$idx");
     }
 
@@ -170,7 +174,11 @@ class PostController extends MasterController {
             DB::msgAndBack("오류 발생");
             exit;
         }
-        $_SESSION['user']->liked = $str;
+       
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        
 
         DB::msgAndGo("좋아요를 취소하셨습니다.", "/view&idx=$idx");
 
@@ -187,7 +195,7 @@ class PostController extends MasterController {
         
         $idx = $_POST['idx'];
         $contents = trim($_POST['contents']);
-        $day = new \DateTime();
+        $day = new \DateTime('now', new \DateTimeZone('Asia/Seoul'));
         $date = $day->format('Y-m-d H:i:s');
 
         // 공백 체크
@@ -236,7 +244,10 @@ class PostController extends MasterController {
             DB::msgAndBack("오류 발생");
             exit;
         }
-       $_SESSION['user']->saved = $saved;
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        
         DB::msgAndGo("저장하셨습니다.", "/view&idx=$idx");
         
     }
@@ -270,8 +281,10 @@ class PostController extends MasterController {
             DB::msgAndBack("오류 발생");
             exit;
         }
-        $_SESSION['user']->saved = $str;
-
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        
         DB::msgAndGo("저장을 취소하셨습니다.", "/view&idx=$idx");
 
         
