@@ -23,23 +23,31 @@
     </div>
     <div class="post-btns">
         <?php 
+        if(isset($_SESSION['user'])):
         $target = (string)$result->idx;
         $liked = $user->liked;
         $array = explode("/", $liked);
-        if(isset($_SESSION['user']) && in_array($target, $array)) : ?>
+        if(in_array($target, $array)) : ?>
             <button onclick="location.href='/unlike&idx=<?=$result->idx?>'"><i class="fas fa-heart"></i><p><?= $result->is_like ?></p></button>
-        <?php else : ?>
+        <?php  else:  ?>
         <button onclick="location.href='/like&idx=<?=$result->idx?>'"><i class="far fa-heart"></i><p><?= $result->is_like ?></p></button>
+        <?php endif;?>
+        <?php else : ?>
+            <button onclick="location.href='/like&idx=<?=$result->idx?>'"><i class="far fa-heart"></i><p><?= $result->is_like ?></p></button>
         <?php endif;?>
         <button id="comment_btn"><i class="far fa-comment"></i><p><?= $result->comments ?></p></button>
         <button id="share_btn"><i class="fas fa-share-alt"></i><p>Share</p></button>
         <?php 
+        if(isset($_SESSION['user'])) :
         $target2 = (string)$result->idx;
         $saved = $user->saved;
         $array2 = explode("/", $saved);
-        if (isset($_SESSION['user']) && in_array($target2, $array2)) : ?>
+        if ( in_array($target2, $array2)) : ?>
         <button onclick="location.href='/unsave&idx=<?= $result->idx ?>'"><i class="fas fa-folder-minus"></i><p>Cancle</p></button>
-            <?php else :?>
+            <?php  else : ?>
+        <button onclick="location.href='/save&idx=<?= $result->idx ?>'"><i class="fas fa-folder-plus"></i><p>Save</p></button>
+        <?php endif; ?>
+        <?php  else : ?>
         <button onclick="location.href='/save&idx=<?= $result->idx ?>'"><i class="fas fa-folder-plus"></i><p>Save</p></button>
         <?php endif; ?>
     </div>
