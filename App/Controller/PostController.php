@@ -302,4 +302,36 @@ class PostController extends MasterController {
         $this->render("search", ["user"=>$user, "list" => $list, "word" => $word]);
     }
 
+    public function remove() {
+        if(!isset($_SESSION['user'])){
+            DB::msgAndBack("로그인 후 이용해주시기 바랍니다.");
+            exit;
+        }
+        $user = $_SESSION['user'];
+        $idx = $_GET['idx'];
+        $id = $_GET['id'];
+
+        if($user != $id) {
+            DB::msgAndBack("본인이 쓴 글만 삭제할 수 있습니다.");
+            exit;
+        }
+
+        $usersql = "UPDATE users SET posts = posts-1 WHERE id = ?";
+        $postsql = "DELETE FROM music_posting WHERE idx = ?";
+        $comsql = "DELETE FROM music_comments WHERE post_idx = ?";
+        $userok = DB::query($usersql, [$id]);
+        $postok = DB::query($postsql, [$idx]);
+        $comok = DB::query($comsql, [$idx]);
+
+        if(!$userok || !$postok) {
+            DB::msgAndBack("오류 발생");
+            exit;
+        }
+
+        $sql3 = "SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?";
+        $user2 = DB::fetch($sql3, [$user->id, $user->pw]);
+        $_SESSION['user'] = $user2;
+        DB::msgAndGo("글이 정상적으로 삭제되었습니다.", "/user");
+    }
+
 }

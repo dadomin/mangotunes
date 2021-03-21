@@ -21,6 +21,10 @@
     <div class="post-contents">
         <p><?= $result->contents ?></p>
     </div>
+    <?php if(isset($_SESSION['user'])) : ?>
+    <?php if($user->id == $result->writer) : ?>
+        <button class="brown-btn"><a href="/remove&idx=<?= $result->idx ?>&id=<?= $result->writer?>">삭제하기</a></button>
+    <?php endif; endif;?>
     <div class="post-btns">
         <?php 
         if(isset($_SESSION['user'])):
@@ -94,6 +98,12 @@
         div.innerHTML=temp;
         
         div.querySelector(".alert-back").addEventListener("click", (e)=>{
+            $(e.target.parentNode).fadeOut();
+            setTimeout(() => {
+                document.querySelector(".alert-div").remove();
+            }, 1500);
+        });
+        div.querySelector(".alert-close").addEventListener("click", (e)=>{
             $(e.target.parentNode).fadeOut();
             setTimeout(() => {
                 document.querySelector(".alert-div").remove();
