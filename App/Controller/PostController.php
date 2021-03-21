@@ -323,17 +323,22 @@ class PostController extends MasterController {
         $postok = DB::query($postsql, [$idx]);
         $comok = DB::query($comsql, [$idx]);
 
-        $sql = "SELECT liked, id FROM users";
+        $sql = "SELECT liked, saved, id FROM users";
         $first = DB::fetchAll($sql, []);
         for($first as $item){
             if($item->liked != null){
-                $replace = str_replace($idx, "", $item);
-                $result = explode("/",$replace);
-                $result = array_diff($result, array(''));
-                $str = implode("/", $result);
+                $replace1 = str_replace($idx, "", $item->liked);
+                $result1 = explode("/",$replace1);
+                $result1 = array_diff($result1, array(''));
+                $str1 = implode("/", $result1);
+
+                $replace2 = str_replace($idx, "", $item->saved);
+                $result2 = explode("/",$replace2);
+                $result2 = array_diff($result2, array(''));
+                $str2 = implode("/", $result2);
                 
-                $query = "UPDATE users SET liked = ? WHERE id = ?";
-                $done = DB::query($a,[$str, $item->id]);
+                $query = "UPDATE users SET liked = ?, saved = ? WHERE id = ?";
+                $done = DB::query($query,[$str1, $str2, $item->id]);
             }
         }
 
