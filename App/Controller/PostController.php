@@ -323,7 +323,7 @@ class PostController extends MasterController {
         $postok = DB::query($postsql, [$idx]);
         $comok = DB::query($comsql, [$idx]);
 
-        $sql = "SELECT liked, saved, id FROM users";
+        $sql = "SELECT * FROM users";
         $first = DB::fetchAll($sql, []);
         for($first as $item){
             if($item->liked != null){
