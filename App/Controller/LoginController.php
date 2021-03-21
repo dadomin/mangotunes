@@ -59,7 +59,7 @@ class LoginController extends MasterController {
                 }
 
                 if($i->email == $email) {
-                    DB::msgAndBack("해당 이름이 이미 등록되어있습니다.");
+                    DB::msgAndBack("해당 이메일이 이미 등록되어있습니다.");
                     exit;
                 }
             }
