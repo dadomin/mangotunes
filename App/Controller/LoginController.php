@@ -43,9 +43,6 @@ class LoginController extends MasterController {
             DB::msgAndBack("이메일형식이 올바르지 않습니다.");
             exit;
         }
-        
-        // 아이디 공백체크
-        $id = preg_replace("/\s| /",'',$id);
 
         // 회원가입된 회원있는지 체크
         $sql1 = "SELECT COUNT(*) AS cnt FROM `users`";
