@@ -6,7 +6,7 @@
             <h2><?= $other->id ?></h2>
         </div>
         <div class="profile-menu">
-            <button id="posts_btn"><?php if($other->posts == null) : ?>0<?php else : ?><?= $other->posts?><?php endif; ?><p>Posts</p></button>
+            <button id="posts_btn"><?php if(!isset($other->posts)) : ?>0<?php else : ?><?= $other->posts?><?php endif; ?><p>Posts</p></button>
             <button id="liked_btn"><?= $like ?><p>Liked</p></button>
             <button id="saved_btn"><?= $save?><p>Saved</p></button>
             <button></button>
