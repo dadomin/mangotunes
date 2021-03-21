@@ -27,7 +27,36 @@
 </head>
 <body>
 
+<?php if(isset($_SESSION['user'])) : ?>
+	<!-- header - login - -->
+	<header>
+		<div class="size">
+			<a href="/" id="header-logo">
+				<img src="/img/mango_logo.jpg" alt="logo">
+			</a>
+			<div id="header-nav">
+				<form class="search-box" action="/search" method="get">
+					<input type="text" name="word">
+					<button type="submit"><i class="fas fa-search"></i></button>
+				</form>
+				<a href="/write"><i class="fas fa-plus-circle"></i></a>
+				<div class="user-img" onclick="location.href='/user&id=<?=$user->id?>'">
+					<img src="<?= $user->img ?>" alt="">
+				</div>
+				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
+				</button>
+				<ul id="header-menu">
+					<li><a href="/">About US</a></li>
+					<li><a href="/">Get Help</a></li>
+					<li><a href="/">Terms and Privacy</a></li>
+					<li><a href="/logout">Log Out</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</header>
 
+	<?php else : ?>
 
 	<!-- header - no login - -->
 	<header>
@@ -40,7 +69,6 @@
 					<input type="text">
 					<a href="/"><i class="fas fa-search"></i></a>
 				</div>
-				<a href="/"><i class="fas fa-plus-circle"></i></a>
 				<button id="login-btn" class="brown-btn"><a href="/login">Log In</a></button>
 				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
 				</button>
@@ -55,3 +83,5 @@
 	</header>
 
 	<!-- // header - no login -  -->
+
+	<?php endif; ?>

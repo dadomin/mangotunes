@@ -17,305 +17,119 @@
     <div class="ranking-popular">
         <h2>Popular</h2>
         <div class="ranking-video-box">
+            <?php foreach($popular as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <div class="ranking-popular">
+    <div class="ranking-happy">
         <h2>Happy</h2>
-        <a href="/">+more</a>
+        <a href="/list&feeling=happy">+more</a>
         <div class="ranking-video-box">
+            <?php foreach($happy as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <div class="ranking-popular">
+    <div class="ranking-sad">
         <h2>Sad</h2>
-        <a href="/">+more</a>
+        <a href="/list&feeling=sad">+more</a>
         <div class="ranking-video-box">
+            <?php foreach($sad as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <div class="ranking-popular">
+    <div class="ranking-stressed">
         <h2>Stressed</h2>
-        <a href="/">+more</a>
+        <a href="/list&feeling=stressed">+more</a>
         <div class="ranking-video-box">
+            <?php foreach($stressed as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <div class="ranking-popular">
+    <div class="ranking-relaxed">
         <h2>Relaxed</h2>
-        <a href="/">+more</a>
+        <a href="/list&feeling=relaxed">+more</a>
         <div class="ranking-video-box">
+            <?php foreach($relaxed as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 
-    <div class="ranking-popular">
+    <div class="ranking-mango">
         <h2>Mango</h2>
-        <a href="/">+more</a>
+        <a href="/list&feeling=mango">+more</a>
         <div class="ranking-video-box">
+            <?php foreach($mango as $item) : ?>
             <div class="ranking-video">
                 <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
+                    <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" alt="">   
                 </div>   
-                <h2>video title</h2>
+                <h2><?= $item->title ?></h2>
                 <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
+                    <div class="user-img"><img src="<?= $item->img ?>" alt=""></div>
+                    <span><?= $item->writer ?></span>
                 </div>
-                <a href="/"></a>
+                <a href="/view&idx=<?= $item->idx ?>"></a>
             </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
-            <div class="ranking-video">
-                <div class="ranking-video-img"> 
-                    <img src="http://img.youtube.com/vi/zkEnqWFihJE/maxresdefault.jpg" alt="">   
-                </div>   
-                <h2>video title</h2>
-                <div class="ranking-video-user">
-                    <div class="user-img"><img src="/img/user.png" alt=""></div>
-                    <span>user-name</span>
-                </div>
-                <a href="/"></a>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
