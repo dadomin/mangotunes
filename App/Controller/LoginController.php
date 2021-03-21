@@ -73,7 +73,7 @@ class LoginController extends MasterController {
 
         //이미지 파일인지 체크
         if(explode("/", $file['type'])[0] != "image") {
-            // DB::msgAndBack("이미지 파일만 업로드 가능합니다.");
+            DB::msgAndBack("이미지 파일만 업로드 가능합니다.");
             exit;
         }
 
