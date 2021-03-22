@@ -133,7 +133,9 @@ header > .size {
     background: none;
     flex: 9;
 }
-.search-box > a {
+.search-box > button {
+    background: none;
+    border: none;
     color: #947368;
     flex: 1;
 }

@@ -52,10 +52,10 @@
 				<img src="/img/mango_logo.jpg" alt="logo">
 			</a>
 			<div id="header-nav">
-				<div class="search-box">
-					<input type="text">
-					<a href="/"><i class="fas fa-search"></i></a>
-				</div>
+				<form class="search-box" action="/search" method="get">
+					<input type="text" name="word">
+					<button type="submit"><i class="fas fa-search"></i></button>
+				</form>
 				<button id="login-btn" class="brown-btn"><a href="/login">Log In</a></button>
 				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
 				</button>
