@@ -15,9 +15,33 @@ class PostController extends MasterController {
         }
         $feeling = $_GET['feeling'];
         
-        $sql = "SELECT m.*, u.img FROM music_posting m join users u on m.writer = u.id  WHERE m.category = ?";
+        $start = null;
+        if(isset($_GET['start'])){
+            $start = $_GET['start'];
+        }else {
+            $start=1;
+        }
+        
+        // $sql = "SELECT TOP 10 * FROM music_posting where category = ? AND COLUME NOT IN (SELECT TOP 5 COLUME FROM music_posting ORDER BY COLUME) ORDER BY COLUME";
+
+        $sql = "SELECT m.*, u.img,  FROM music_posting m join users u on m.writer = u.id  WHERE m.category = ?";
         $list = DB::fetchAll($sql, [$feeling]);
-        $this->render("list", ["feeling" => $feeling, "user" => $user, "list" => $list]);
+
+        $cntSql = "SELECT count(*) as cnt from music_posting WHERE category = ?";
+        $total = DB::fetch($cntSql, [$feeling])->cnt;
+        
+        
+
+        // $rowPage = 15;
+        // $totalPage = ceil($totalCnt / $rowPage);
+        // if($totalPage == 0) {
+        //     $totalPage = 1;
+        // }
+
+        // $total_block = ceil($totalPage / $block_limit);
+        // $total_page = intval(($total-1) / $limite) +1;
+
+        $this->render("list", ["total"=>$total,"feeling" => $feeling, "user" => $user, "list" => $list]);
     }
 
     public function view()

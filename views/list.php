@@ -8,7 +8,25 @@
     </ul>
 </nav> -->
 
+<?php
+
+$start = null;
+if(isset($_GET['start'])){
+    $start = $_GET['start'];
+}else {
+    $start=1;
+}
+
+$scale = 10;
+$page_scale = 15;
+
+$total_page = ceil($total / $scale);
+$page = floor($total_page / $page_scale);
+$n_page = floor($start / $page_scale);
+
+?>
 <!-- list -->
+<?= $total ?>
 <section id="list">
     <div class="list-title">
         <div class="size">
@@ -41,6 +59,8 @@
                     $list = array_reverse($list);
                     $cnt = count($list);
                     foreach($list as $item) : 
+                    // $n = $cnt / $page_scale;
+
                 ?>
                 <tr>
                     <td><p class="list-video-no"><?= $cnt ?></p></td>
@@ -66,8 +86,38 @@
         </div>
 
         <div class="list-page-btns">
-            <button class="brown-btn-rev"><a href="/">Prev</a></button>
-            <button class="brown-btn-rev"><a href="/">Next</a></button>
+            <!-- <button class="brown-btn-rev"><a href="/">Prev</a></button>
+            <button class="brown-btn-rev"><a href="/">Next</a></button> -->
+            
+            <?php
+
+
+            if($n_page > 0) {
+                $p_start = ($n_page -1) * $page_scale;
+                $link = "<button class='brown-btn-rev'><a href='/list&feeling=".$feeling."&start=${p_start}'>";
+                $link .= "Prev";
+                $link .= "</a></button>";
+                echo $lnk;
+            }
+            $is = $n_page*$page_scale;//단위블럭 페이지 시작번호 구하기 현재 페이지 번호를 이용하여 현재 단위블럭 페이지 번호를 구하고 그 값을 이용하여 단위블럭 페이지 출력수를 곱한 값
+            for($i=$is; $i < $is+$page_scale; $i++){
+                //i는 현재 단위블럭 페이지 번호*단위블럭 페이지 출력수 부터 시작하고 i는 단위블럭 페이지 출력수를 더한 값만큼만 반복하도록 지정
+                    if($i < $total_page){//i가 총 페이지수 보다 작을 동안만 출력하기 위한조건
+                    $link = "<button class='brown-btn-rev'><a href='/list&feeling=".$feeling."&start=${i}'>";
+                    $link .= $i+1;//start값이 i로 지정됨으로 화면상 출력기준을 1부터 시작하는 10진수로 맞추기 위해 +1을 연산
+                    $link .= "</a></button>";
+                    echo $link." ";
+                }
+            }
+
+            if($n_page < $page){//현재 단위블럭 페이지번호 보다 총 단위블럭 페이지 수가 작을 경우에만 다음 링크 출력
+                $link = "<button class='brown-btn-rev'><a href='/list&feeling=".$feeling."&start=${i}'>";//i는 상단 for문에서 이미 마지막 페이지 start번호보다 +1한 값을 가지고 있기 때문에 i를 그냥 출력함
+                $link .= "Next";
+                $link .= "</a></button>";
+                echo $link;
+            }
+
+            ?>
         </div>
     </div>
 </section>
