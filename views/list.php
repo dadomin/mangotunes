@@ -18,7 +18,7 @@ if(isset($_GET['start'])){
 }
 
 $scale = 10;
-$page_scale = 15;
+$page_scale = 5;
 
 $total_page = ceil($total / $scale);
 $page = floor($total_page / $page_scale);
@@ -101,7 +101,7 @@ $n_page = floor($start / $page_scale);
                 $link = "<button class='brown-btn-rev'><a href='/list&feeling=".$feeling."&start=${p_start}'>";
                 $link .= "Prev";
                 $link .= "</a></button>";
-                echo $lnk;
+                echo $link." ";
             }
             $is = $n_page*$page_scale;//단위블럭 페이지 시작번호 구하기 현재 페이지 번호를 이용하여 현재 단위블럭 페이지 번호를 구하고 그 값을 이용하여 단위블럭 페이지 출력수를 곱한 값
             for($i=$is; $i < $is+$page_scale; $i++){
@@ -118,7 +118,7 @@ $n_page = floor($start / $page_scale);
                 $link = "<button class='brown-btn-rev'><a href='/list&feeling=".$feeling."&start=${i}'>";//i는 상단 for문에서 이미 마지막 페이지 start번호보다 +1한 값을 가지고 있기 때문에 i를 그냥 출력함
                 $link .= "Next";
                 $link .= "</a></button>";
-                echo $link;
+                echo $link." ";
             }
 
             ?>
