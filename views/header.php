@@ -56,7 +56,8 @@
 					<input type="text" name="word">
 					<button type="submit"><i class="fas fa-search"></i></button>
 				</form>
-				<button id="login-btn" class="brown-btn"><a href="/login">Log In</a></button>
+				<button id="login-btn" class="brown-btn"><a href="/login">Sign In</a></button>
+				<button class="brown-btn-rev"><a href="/register">Sign Up</a></button>
 				<button id="header-menu-btn"><span><i class="fas fa-bars"></i></span>
 				</button>
 				<ul id="header-menu">

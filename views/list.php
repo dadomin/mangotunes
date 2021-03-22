@@ -47,12 +47,16 @@ $n_page = floor($start / $page_scale);
             </div>
         </div> -->
         <div class="list-table">
+            <select name="" id="">
+                <option value="">Most Popular</option>
+                <option value="">Oldest</option>
+                <option value="">Newest</option>
+            </select>
             <table class="list-tbl">
                 <tr>
-                    <th width="5%">NO</th>
-                    <th width="70%">TITLE</th>
-                    <th width="10%">DATE</th>
-                    <th widht="20%">WRITER</th>
+                    <th width="70%">Title</th>
+                    <th width="10%">Date</th>
+                    <th widht="20%">User</th>
                 </tr>
 
                 <?php 
@@ -65,8 +69,7 @@ $n_page = floor($start / $page_scale);
                     if($a > $scale*$start && $a < $scale*$start+11) :
                 ?>
                 <tr>
-                    <td><p class="list-video-no"><?= $cnt ?></p></td>
-                    <td class="list-video-title">
+                    <td class="list-video-title" onclick="location.href='/view&idx=<?=$item->idx?>'">
                         <div class="list-video-img">
                             <img src="http://img.youtube.com/vi/<?= $item->link_id ?>/mqdefault.jpg" onerror="this.src='/img/music_note.png'">
                         </div>
