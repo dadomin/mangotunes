@@ -134,8 +134,6 @@ header > .size {
     flex: 9;
 }
 .search-box > a {
-    background: none;
-    border: none;
     color: #947368;
     flex: 1;
 }
