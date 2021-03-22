@@ -59,8 +59,8 @@ $n_page = floor($start / $page_scale);
                     $list = array_reverse($list);
                     $cnt = count($list);
                     foreach($list as $item) : 
-                    // $n = $cnt / $page_scale;
-
+                    $n = $cnt / ($scale*$start);
+                    if($n < 1 || $n == 1) :
                 ?>
                 <tr>
                     <td><p class="list-video-no"><?= $cnt ?></p></td>
@@ -79,6 +79,7 @@ $n_page = floor($start / $page_scale);
                     </td>
                 </tr>
                 <?php 
+                    endif;
                     $cnt--;
                     endforeach; ?>
                 
