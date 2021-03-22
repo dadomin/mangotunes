@@ -122,22 +122,27 @@ header > .size {
     border-radius: 15px;
     padding: 2px 12px;
     width: 220px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    height: 27px;
+    position: relative;
 }
 .search-box > input {
     outline: none;
     border: none;
     background: none;
-    flex: 9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
 }
 .search-box > button {
     background: none;
     border: none;
     color: #947368;
-    flex: 1;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 #header-menu-btn {
     border: none;
