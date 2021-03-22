@@ -24,7 +24,7 @@ class PostController extends MasterController {
         
         // $sql = "SELECT TOP 10 * FROM music_posting where category = ? AND COLUME NOT IN (SELECT TOP 5 COLUME FROM music_posting ORDER BY COLUME) ORDER BY COLUME";
 
-        $sql = "SELECT m.*, u.img,  FROM music_posting m join users u on m.writer = u.id  WHERE m.category = ?";
+        $sql = "SELECT m.*, u.img FROM music_posting m join users u on m.writer = u.id  WHERE m.category = ?";
         $list = DB::fetchAll($sql, [$feeling]);
 
         $cntSql = "SELECT count(*) as cnt from music_posting WHERE category = ?";
