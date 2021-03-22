@@ -14,7 +14,7 @@ $start = null;
 if(isset($_GET['start'])){
     $start = $_GET['start'];
 }else {
-    $start=1;
+    $start=0;
 }
 
 $scale = 10;
@@ -26,7 +26,7 @@ $n_page = floor($start / $page_scale);
 
 ?>
 <!-- list -->
-<?= $total ?>
+
 <section id="list">
     <div class="list-title">
         <div class="size">
@@ -58,9 +58,11 @@ $n_page = floor($start / $page_scale);
                 <?php 
                     $list = array_reverse($list);
                     $cnt = count($list);
+                    $a = 1;
                     foreach($list as $item) : 
-                    $n = $cnt / ($scale*$start);
-                    if($n < 1 || $n == 1) :
+                    
+                    $n = $scale*($start+1) - $total;
+                    if($a > $scale*$start && $a < $scale*$start+11) :
                 ?>
                 <tr>
                     <td><p class="list-video-no"><?= $cnt ?></p></td>
@@ -80,6 +82,7 @@ $n_page = floor($start / $page_scale);
                 </tr>
                 <?php 
                     endif;
+                    $a++;
                     $cnt--;
                     endforeach; ?>
                 

@@ -31,7 +31,7 @@
                     <input type="file" id="file" name="file" accept='image/jpg,image/png,image/jpeg,image/gif'>
                 </div>
             </div>
-            <button type="submit">LOG IN</button>
+            <button type="submit">REGISTER</button>
         </div>
         <p>Go back to <a href="/register">LOG IN</a>!</p>
     </div>
