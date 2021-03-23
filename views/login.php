@@ -1,3 +1,4 @@
+<!-- login -->
 <form id="login" action="/login/check" method="post">
     <div class="size">
         <div id="login-form">

@@ -22,8 +22,6 @@
             </div>
             <div class="register-input">
                 <p>PROFILE IMAGE</p>
-                <!-- <input type='file' accept='image/jpg,image/png,image/jpeg,image/gif' id='profile_img_upload'/>
-                <label for='profile_img_upload'><i class="far fa-file-image"></i>&nbsp;파일 선택</label> -->
                 <div class="filebox">
                     <input class="upload-name" value="파일선택" disabled="disabled">
 

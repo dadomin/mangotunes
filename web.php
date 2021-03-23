@@ -16,7 +16,6 @@ Route::get("/save", "PostController@save");
 Route::get("/unsave", "PostController@unsave");
 Route::get("/user", "ProfileController@index");
 Route::get("/search", "PostController@search");
-// Route::get("/remove", "PostController@remove");
 
 Route::post("/register/check", "LoginController@regicheck");
 Route::post("/login/check", "LoginController@logcheck");

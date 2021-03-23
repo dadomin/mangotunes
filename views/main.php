@@ -11,8 +11,6 @@
 </nav>
 <!-- // main - nav -->
 
-<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/zkEnqWFihJE" frameborder="0" allowfullscreen></iframe> -->
-
 <section id="main-ranking">
     <div class="ranking-popular">
         <h2>Popular</h2>

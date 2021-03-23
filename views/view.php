@@ -78,8 +78,7 @@
 <script>
     
     $("#share_btn").on("click", ()=>{
-        
-        // alert(`${location.href} \n위 링크를 복사하여 공유하세요.`);
+
         let div = document.createElement("div");
         div.classList.add("alert-div");
         let temp = `
